@@ -1,0 +1,14 @@
+{
+  "_comment": "Adjust these to match YOUR dedicated capstone repository. Owner and repo name come from .env.",
+  "dedicatedRepository": {
+    "expectedVisibility": "Public",
+    "expectedDescription": "AIQE capstone - Playwright UI and API automation framework",
+    "expectedDefaultBranch": "main",
+    "expectedReadmeText": "capstone"
+  },
+  "integratedRepository": {
+    "description": "Temporary repository created by the AIQE capstone integrated test",
+    "expectedVisibility": "Public",
+    "expectedDefaultBranch": "main"
+  }
+}

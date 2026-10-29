@@ -1,0 +1,20 @@
+{
+  "publicRepository": {
+    "searchKeyword": "microsoft/playwright",
+    "owner": "microsoft",
+    "name": "playwright",
+    "fullName": "microsoft/playwright",
+    "url": "https://github.com/microsoft/playwright"
+  },
+  "publicUser": {
+    "username": "torvalds",
+    "profileUrl": "https://github.com/torvalds",
+    "expectedRepository": "linux"
+  },
+  "negative": {
+    "randomSearchPrefix": "zzqxj-no-such-repo",
+    "invalidOwner": "aiqe-no-such-owner-0001",
+    "invalidRepository": "aiqe-no-such-repo-0001",
+    "notFoundTitle": "Page not found"
+  }
+}

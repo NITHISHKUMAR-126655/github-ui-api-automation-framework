@@ -1,0 +1,20 @@
+{
+  "user": {
+    "requiredFields": ["login", "id", "node_id", "avatar_url", "html_url", "type", "public_repos"],
+    "contentType": "application/json"
+  },
+  "repository": {
+    "requiredFields": ["id", "name", "full_name", "private", "owner", "html_url", "url", "default_branch", "visibility"]
+  },
+  "listRepositories": {
+    "perPage": 100,
+    "requiredFields": ["id", "name", "full_name", "private", "owner", "html_url", "default_branch"]
+  },
+  "createRepository": {
+    "description": "Temporary repository created by the AIQE capstone API test",
+    "private": false,
+    "autoInit": true,
+    "expectedVisibility": "public",
+    "expectedDefaultBranch": "main"
+  }
+}

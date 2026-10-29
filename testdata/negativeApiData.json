@@ -1,0 +1,24 @@
+{
+  "nonExistingRepository": {
+    "owner": "octocat",
+    "repo": "aiqe-no-such-repo-0001",
+    "expectedStatus": 404,
+    "expectedMessage": "Not Found"
+  },
+  "invalidOwner": {
+    "owner": "aiqe-no-such-owner-0001",
+    "repo": "hello-world",
+    "expectedStatus": 404,
+    "expectedMessage": "Not Found"
+  },
+  "invalidRepositoryNames": ["name with spaces", "!!invalid!!"],
+  "unauthenticatedProtectedEndpoint": {
+    "expectedStatus": 401,
+    "expectedMessage": "Requires authentication"
+  },
+  "invalidToken": {
+    "token": "invalid_token_for_negative_testing",
+    "expectedStatus": 401,
+    "expectedMessage": "Bad credentials"
+  }
+}
