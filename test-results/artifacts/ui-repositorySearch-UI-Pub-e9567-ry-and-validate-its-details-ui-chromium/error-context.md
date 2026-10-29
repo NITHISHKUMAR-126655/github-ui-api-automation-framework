@@ -1,0 +1,1232 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: ui\repositorySearch.spec.ts >> UI | Public repository search >> UI-01 search a known public repository and validate its details
+- Location: tests\ui\repositorySearch.spec.ts:7:7
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })
+Expected: visible
+Error: strict mode violation: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) resolved to 2 elements:
+    1) <a aria-current="page" data-tab-item="code" data-discover="true" data-react-nav="code-view" href="/microsoft/playwright" class="prc-components-UnderlineItem-7fP-n" data-react-nav-anchor="code-view-repo-link" data-turbo-frame="repo-content-turbo-frame">…</a> aka getByRole('link', { name: 'Code', exact: true })
+    2) <a href="#" class="prc-components-UnderlineItem-7fP-n">…</a> aka getByRole('navigation', { name: 'Repository files' }).getByRole('link', { name: 'Code of conduct' })
+
+Call log:
+  - Expect "toBeVisible" getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) with timeout 10000ms
+  - waiting for getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - link "Skip to content" [ref=f2e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=f2e9]:
+      - heading "Navigation Menu" [level=2] [ref=f2e10]
+      - generic [ref=f2e11]:
+        - link "Homepage" [ref=f2e14] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e17]:
+          - navigation "Global" [ref=f2e18]:
+            - list [ref=f2e19]:
+              - listitem [ref=f2e20]:
+                - button "Products" [ref=f2e22] [cursor=pointer]
+              - listitem [ref=f2e25]:
+                - button "Developers" [ref=f2e27] [cursor=pointer]
+              - listitem [ref=f2e30]:
+                - button "Businesses" [ref=f2e32] [cursor=pointer]
+              - listitem [ref=f2e35]:
+                - button "Resources" [ref=f2e37] [cursor=pointer]
+              - listitem [ref=f2e40]:
+                - link "Pricing" [ref=f2e41] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=f2e42]:
+            - button "Search or jump to, type / to search" [ref=f2e44] [cursor=pointer]:
+              - generic [ref=f2e47]:
+                - generic [ref=f2e48]: Search
+                - generic [aria-hidden] [ref=f2e49]: /
+            - generic [ref=f2e50]:
+              - link "Sign in" [ref=f2e52] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fplaywright
+              - link "Sign up" [ref=f2e55] [cursor=pointer]:
+                - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=microsoft%2Fplaywright
+              - button "Appearance settings" [ref=f2e58] [cursor=pointer]
+  - main [ref=f2e65]:
+    - generic "Global navigation menu" [ref=f2e68]:
+      - navigation "Breadcrumbs" [ref=f2e71]:
+        - list [ref=f2e72]:
+          - listitem [ref=f2e73]:
+            - link "microsoft" [ref=f2e74] [cursor=pointer]:
+              - /url: /microsoft
+          - listitem [ref=f2e76]:
+            - link "playwright" [ref=f2e77] [cursor=pointer]:
+              - /url: /microsoft/playwright
+      - heading "Repository navigation" [level=2] [ref=f2e80]
+      - navigation "Repository" [ref=f2e81]:
+        - list [ref=f2e82]:
+          - listitem [ref=f2e83]:
+            - link "Code" [ref=f2e84] [cursor=pointer]:
+              - /url: /microsoft/playwright
+          - listitem [ref=f2e89]:
+            - link "Issues (187)" [ref=f2e90] [cursor=pointer]:
+              - /url: /microsoft/playwright/issues
+              - generic [ref=f2e95]: Issues
+              - generic [ref=f2e96]:
+                - generic [aria-hidden] [ref=f2e97]: "187"
+                - generic [ref=f2e98]: (187)
+          - listitem [ref=f2e99]:
+            - link "Pull requests (36)" [ref=f2e100] [cursor=pointer]:
+              - /url: /microsoft/playwright/pulls
+              - generic [ref=f2e104]: Pull requests
+              - generic [ref=f2e105]:
+                - generic [aria-hidden] [ref=f2e106]: "36"
+                - generic [ref=f2e107]: (36)
+          - listitem [ref=f2e108]:
+            - link "Actions" [ref=f2e109] [cursor=pointer]:
+              - /url: /microsoft/playwright/actions
+          - listitem [ref=f2e114]:
+            - link "Security and quality" [ref=f2e115] [cursor=pointer]:
+              - /url: /microsoft/playwright/security
+          - listitem [ref=f2e120]:
+            - link "Insights" [ref=f2e121] [cursor=pointer]:
+              - /url: /microsoft/playwright/pulse
+    - generic [ref=f2e138]:
+      - generic [ref=f2e142]:
+        - generic [ref=f2e145]:
+          - img "microsoft" [ref=f2e146]
+          - generic "playwright" [ref=f2e147]:
+            - strong [ref=f2e148]:
+              - link "playwright" [ref=f2e149] [cursor=pointer]:
+                - /url: /microsoft/playwright
+          - generic [ref=f2e150]: Public
+        - list [ref=f2e152]:
+          - listitem [ref=f2e153]:
+            - link "You must be signed in to change notification settings" [ref=f2e154] [cursor=pointer]:
+              - /url: /login?return_to=%2Fmicrosoft%2Fplaywright
+              - generic [ref=f2e155]: Notifications
+          - listitem [ref=f2e157]:
+            - link "You must be signed in to fork a repository" [ref=f2e158] [cursor=pointer]:
+              - /url: /login?return_to=%2Fmicrosoft%2Fplaywright
+              - generic [ref=f2e160]:
+                - text: Fork
+                - generic [aria-hidden] [ref=f2e161]: 6.7k
+                - generic [ref=f2e162]: (6.7k)
+          - listitem [ref=f2e163]:
+            - link "Star (98.8k)" [ref=f2e164] [cursor=pointer]:
+              - /url: /login?return_to=%2Fmicrosoft%2Fplaywright
+              - generic [ref=f2e166]:
+                - text: Star
+                - generic [aria-hidden] [ref=f2e167]: 98.8k
+                - generic [ref=f2e168]: (98.8k)
+      - generic [ref=f2e169]:
+        - generic [ref=f2e172]:
+          - generic [ref=f2e173]:
+            - generic [ref=f2e174]:
+              - button "main branch" [ref=f2e176] [cursor=pointer]:
+                - generic [ref=f2e177]: main
+              - generic [ref=f2e181]:
+                - link [ref=f2e182] [cursor=pointer]:
+                  - /url: /microsoft/playwright/branches
+                  - generic [ref=f2e185]:
+                    - strong [ref=f2e186]: "218"
+                    - text: Branches
+                - link [ref=f2e187] [cursor=pointer]:
+                  - /url: /microsoft/playwright/tags
+                  - generic [ref=f2e190]:
+                    - strong [ref=f2e191]: "168"
+                    - text: Tags
+            - generic [ref=f2e192]:
+              - combobox "Go to file" [ref=f2e200]
+              - button "Code" [ref=f2e201] [cursor=pointer]
+          - generic [ref=f2e204]:
+            - generic [ref=f2e205]:
+              - generic [ref=f2e207]:
+                - heading "Latest commit" [level=2] [ref=f2e208]
+                - generic [ref=f2e209]:
+                  - generic [ref=f2e211]:
+                    - link [ref=f2e212] [cursor=pointer]:
+                      - /url: /pavelfeldman
+                      - img "pavelfeldman" [ref=f2e213]
+                    - link "commits by pavelfeldman" [ref=f2e214] [cursor=pointer]:
+                      - /url: /microsoft/playwright/commits?author=pavelfeldman
+                      - text: Pavel Feldman (pavelfeldman)
+                  - generic [ref=f2e215]:
+                    - 'link "devops(triage): extract the shared steps of the triage and revision w…" [ref=f2e218] [cursor=pointer]':
+                      - /url: /microsoft/playwright/commit/880865ae68b140a4458ebf9253b7c337433be688
+                    - button "Open commit details" [ref=f2e219] [cursor=pointer]
+                    - button "success" [ref=f2e222] [cursor=pointer]
+                - generic [ref=f2e225]:
+                  - generic [ref=f2e227]:
+                    - link "Commit 880865a" [ref=f2e228] [cursor=pointer]:
+                      - /url: /microsoft/playwright/commit/880865ae68b140a4458ebf9253b7c337433be688
+                      - text: 880865a
+                    - text: ·
+                    - generic "Oct 29, 2026, 5:46 AM GMT+5:30" [ref=f2e229]: Oct 29, 20266 hours ago
+                  - generic [ref=f2e230]:
+                    - heading "History" [level=2] [ref=f2e231]
+                    - link "18,313 Commits" [ref=f2e232] [cursor=pointer]:
+                      - /url: /microsoft/playwright/commits/main/
+              - heading "Folders and files" [level=2] [ref=f2e235]
+              - table "Folders and files" [ref=f2e237]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message"
+                    - columnheader "Last commit date"
+                - rowgroup [ref=f2e238]:
+                  - row [ref=f2e239]:
+                    - cell [ref=f2e240]:
+                      - link ".azure-pipelines, (Directory)" [ref=f2e247] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/.azure-pipelines
+                        - text: .azure-pipelines
+                    - cell [ref=f2e248]:
+                      - generic [ref=f2e250]:
+                        - 'link "devops: restore npm publishing from GitHub Actions (" [ref=f2e251] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/52900a1b99ca51011526afcaf8981970cc1a521a
+                        - link "#42550" [ref=f2e252] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/42550
+                        - link ")" [ref=f2e253] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/52900a1b99ca51011526afcaf8981970cc1a521a
+                    - cell "Sep 3, 2026last month" [ref=f2e254]
+                  - row [ref=f2e256]:
+                    - cell [ref=f2e257]:
+                      - link ".claude/skills, (Directory)" [ref=f2e264] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/.claude/skills
+                        - text: .claude/skills
+                    - cell [ref=f2e265]:
+                      - 'link "devops: triage skill takes next steps itself instead of suggesting th…" [ref=f2e268] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/ad5210f22217b64149459c58abfa6069f4b203cc
+                    - cell "Oct 27, 2026yesterday" [ref=f2e269]
+                  - row [ref=f2e271]:
+                    - cell [ref=f2e272]:
+                      - link ".github, (Directory)" [ref=f2e279] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/.github
+                        - text: .github
+                    - cell [ref=f2e280]:
+                      - 'link "devops(triage): extract the shared steps of the triage and revision w…" [ref=f2e283] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/880865ae68b140a4458ebf9253b7c337433be688
+                    - cell "Oct 29, 20266 hours ago" [ref=f2e284]
+                  - row [ref=f2e286]:
+                    - cell [ref=f2e287]:
+                      - link "browser_patches, (Directory)" [ref=f2e294] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/browser_patches
+                        - text: browser_patches
+                    - cell [ref=f2e295]:
+                      - generic [ref=f2e297]:
+                        - 'link "feat(firefox): roll to r1569 (" [ref=f2e298] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/57decd26b623ab0291a4839ff976bbc94165ba32
+                        - link "#43710" [ref=f2e299] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43710
+                        - link ")" [ref=f2e300] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/57decd26b623ab0291a4839ff976bbc94165ba32
+                    - cell "Oct 28, 202616 hours ago" [ref=f2e301]
+                  - row [ref=f2e303]:
+                    - cell [ref=f2e304]:
+                      - link "docs/src, (Directory)" [ref=f2e311] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/docs/src
+                        - text: docs/src
+                    - cell [ref=f2e312]:
+                      - generic [ref=f2e314]:
+                        - 'link "feat(test runner): add PLAYWRIGHT_TRANSFORM_CACHE_DIR (" [ref=f2e315] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/7eb190058a3ad843e0033d09093a4e4ce0e175a3
+                        - link "#43733" [ref=f2e316] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43733
+                        - link ")" [ref=f2e317] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/7eb190058a3ad843e0033d09093a4e4ce0e175a3
+                    - cell "Oct 28, 20268 hours ago" [ref=f2e318]
+                  - row [ref=f2e320]:
+                    - cell [ref=f2e321]:
+                      - link "examples, (Directory)" [ref=f2e328] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/examples
+                        - text: examples
+                    - cell [ref=f2e329]:
+                      - generic [ref=f2e331]:
+                        - 'link "test(components): restore web and html-reporter component tests (" [ref=f2e332] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/58cf15c7c0edb170ecb704960d4cb7e77f1c199a
+                        - link "#41889" [ref=f2e333] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/41889
+                        - link ")" [ref=f2e334] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/58cf15c7c0edb170ecb704960d4cb7e77f1c199a
+                    - cell "Jul 21, 20263 months ago" [ref=f2e335]
+                  - row [ref=f2e337]:
+                    - cell [ref=f2e338]:
+                      - link "packages, (Directory)" [ref=f2e345] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/packages
+                        - text: packages
+                    - cell [ref=f2e346]:
+                      - 'link "fix(aria): fall back to aria-labelledby attribute without element ref…" [ref=f2e349] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/c78117362861a84d5b2f0cf988a02f9963a2a958
+                    - cell "Oct 28, 20268 hours ago" [ref=f2e350]
+                  - row [ref=f2e352]:
+                    - cell [ref=f2e353]:
+                      - link "tests, (Directory)" [ref=f2e360] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/tests
+                        - text: tests
+                    - cell [ref=f2e361]:
+                      - 'link "fix(aria): fall back to aria-labelledby attribute without element ref…" [ref=f2e364] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/c78117362861a84d5b2f0cf988a02f9963a2a958
+                    - cell "Oct 28, 20268 hours ago" [ref=f2e365]
+                  - row [ref=f2e367]:
+                    - cell [ref=f2e368]:
+                      - link "utils, (Directory)" [ref=f2e375] [cursor=pointer]:
+                        - /url: /microsoft/playwright/tree/main/utils
+                        - text: utils
+                    - cell [ref=f2e376]:
+                      - 'link "chore(docs): replace render_release_notes.mjs with a release notes sk…" [ref=f2e379] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/4ba650cabb9e4437b4eb9697ffb9107a2026fd29
+                    - cell "Oct 20, 2026last week" [ref=f2e380]
+                  - row [ref=f2e382]:
+                    - cell [ref=f2e383]:
+                      - link ".editorconfig, (File)" [ref=f2e390] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/.editorconfig
+                        - text: .editorconfig
+                    - cell [ref=f2e391]:
+                      - link "Initial commit" [ref=f2e394] [cursor=pointer]:
+                        - /url: /microsoft/playwright/commit/9ba375c06344835d783fe60bf33f857f9bc208a4
+                    - cell "Nov 19, 20197 years ago" [ref=f2e395]
+                  - row [ref=f2e397]:
+                    - cell [ref=f2e398]:
+                      - link ".gitattributes, (File)" [ref=f2e405] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/.gitattributes
+                        - text: .gitattributes
+                    - cell [ref=f2e406]:
+                      - generic [ref=f2e408]:
+                        - 'link "feat: implement a new image comparison function (" [ref=f2e409] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/6d82460a02dec3393490bcab7b619f668f03e6c6
+                        - link "#19166" [ref=f2e410] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/19166
+                        - link ")" [ref=f2e411] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/6d82460a02dec3393490bcab7b619f668f03e6c6
+                    - cell "Dec 2, 20224 years ago" [ref=f2e412]
+                  - row [ref=f2e414]:
+                    - cell [ref=f2e415]:
+                      - link ".gitignore, (File)" [ref=f2e422] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/.gitignore
+                        - text: .gitignore
+                    - cell [ref=f2e423]:
+                      - 'link "chore(coverage): istanbul instrumentation for the trace viewer and ht…" [ref=f2e426] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/07f1a6154795f055f341b8972086533e8e48b36f
+                    - cell "Sep 19, 2026last month" [ref=f2e427]
+                  - row [ref=f2e429]:
+                    - cell [ref=f2e430]:
+                      - link "AGENTS.md, (File)" [ref=f2e437] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/AGENTS.md
+                        - text: AGENTS.md
+                    - cell [ref=f2e438]:
+                      - generic [ref=f2e440]:
+                        - 'link "chore: prefer extending existing tests in AGENTS.md (" [ref=f2e441] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/2c6885b34e37e1edb9c8c5cc1b5d83b439c60fec
+                        - link "#43325" [ref=f2e442] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43325
+                        - link ")" [ref=f2e443] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/2c6885b34e37e1edb9c8c5cc1b5d83b439c60fec
+                    - cell "Oct 12, 20262 weeks ago" [ref=f2e444]
+                  - row [ref=f2e446]:
+                    - cell [ref=f2e447]:
+                      - link "CODE_OF_CONDUCT.md, (File)" [ref=f2e454] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/CODE_OF_CONDUCT.md
+                        - text: CODE_OF_CONDUCT.md
+                    - cell [ref=f2e455]:
+                      - 'link "Revert \"chore: rework the crlf in md fix\"" [ref=f2e458] [cursor=pointer]':
+                        - /url: /microsoft/playwright/commit/af6e3a8ea1d4fb4a8302dac504cdd35247fa4bdc
+                    - cell "Jan 20, 20216 years ago" [ref=f2e459]
+                  - row [ref=f2e461]:
+                    - cell [ref=f2e462]:
+                      - link "CONTRIBUTING.md, (File)" [ref=f2e469] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/CONTRIBUTING.md
+                        - text: CONTRIBUTING.md
+                    - cell [ref=f2e470]:
+                      - generic [ref=f2e472]:
+                        - 'link "chore: update contributors'' guide (" [ref=f2e473] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/4b4d03814cce0cd4d722b10e38c70aed5981d3a6
+                        - link "#40541" [ref=f2e474] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/40541
+                        - link ")" [ref=f2e475] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/4b4d03814cce0cd4d722b10e38c70aed5981d3a6
+                    - cell "Apr 30, 20266 months ago" [ref=f2e476]
+                  - row [ref=f2e478]:
+                    - cell [ref=f2e479]:
+                      - link "FILING_ISSUES.md, (File)" [ref=f2e486] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/FILING_ISSUES.md
+                        - text: FILING_ISSUES.md
+                    - cell [ref=f2e487]:
+                      - generic [ref=f2e489]:
+                        - 'link "docs: issue guide (" [ref=f2e490] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/bfb79990da4ade2406464dfe05f160e172182139
+                        - link "#34457" [ref=f2e491] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/34457
+                        - link ")" [ref=f2e492] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/bfb79990da4ade2406464dfe05f160e172182139
+                    - cell "Jan 23, 2025last year" [ref=f2e493]
+                  - row [ref=f2e495]:
+                    - cell [ref=f2e496]:
+                      - link "LICENSE, (File)" [ref=f2e503] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/LICENSE
+                        - text: LICENSE
+                    - cell [ref=f2e504]:
+                      - generic [ref=f2e506]:
+                        - 'link "chore(license): use Apache 2.0 (" [ref=f2e507] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/562e6f5fe19e40dab57574eda39d2049ffdf8a28
+                        - link "#389" [ref=f2e508] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/389
+                        - link ")" [ref=f2e509] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/562e6f5fe19e40dab57574eda39d2049ffdf8a28
+                    - cell "Jan 7, 20207 years ago" [ref=f2e510]
+                  - row [ref=f2e512]:
+                    - cell [ref=f2e513]:
+                      - link "NOTICE, (File)" [ref=f2e520] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/NOTICE
+                        - text: NOTICE
+                    - cell [ref=f2e521]:
+                      - generic [ref=f2e523]:
+                        - 'link "chore(license): add NOTICE (" [ref=f2e524] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/14da8f531df4e86837447d0b432d3a90aa08ee5f
+                        - link "#309" [ref=f2e525] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/309
+                        - link ")" [ref=f2e526] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/14da8f531df4e86837447d0b432d3a90aa08ee5f
+                    - cell "Dec 19, 20197 years ago" [ref=f2e527]
+                  - row [ref=f2e529]:
+                    - cell [ref=f2e530]:
+                      - link "README.md, (File)" [ref=f2e537] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/README.md
+                        - text: README.md
+                    - cell [ref=f2e538]:
+                      - generic [ref=f2e540]:
+                        - 'link "feat(chromium): roll to r1252 (" [ref=f2e541] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/b80bcb5a873a1c497597e86da7fa86154a940b3d
+                        - link "#43608" [ref=f2e542] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43608
+                        - link ")" [ref=f2e543] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/b80bcb5a873a1c497597e86da7fa86154a940b3d
+                    - cell "Oct 23, 20265 days ago" [ref=f2e544]
+                  - row [ref=f2e546]:
+                    - cell [ref=f2e547]:
+                      - link "SECURITY.md, (File)" [ref=f2e554] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/SECURITY.md
+                        - text: SECURITY.md
+                    - cell [ref=f2e555]:
+                      - generic [ref=f2e557]:
+                        - 'link "chore(policy files): Update SECURITY.md to V0.0.9 (" [ref=f2e558] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/b269ceb7732e144b70ea1e4aaff39b0aa048506b
+                        - link "#31775" [ref=f2e559] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/31775
+                        - link ")" [ref=f2e560] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/b269ceb7732e144b70ea1e4aaff39b0aa048506b
+                    - cell "Jul 19, 20242 years ago" [ref=f2e561]
+                  - row [ref=f2e563]:
+                    - cell [ref=f2e564]:
+                      - link "SUPPORT.md, (File)" [ref=f2e571] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/SUPPORT.md
+                        - text: SUPPORT.md
+                    - cell [ref=f2e572]:
+                      - generic [ref=f2e574]:
+                        - 'link "docs: add SUPPORT.md (" [ref=f2e575] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/22fe985c5480e3279c4937abcba2e835ed6b5881
+                        - link "#32362" [ref=f2e576] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/32362
+                        - link ")" [ref=f2e577] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/22fe985c5480e3279c4937abcba2e835ed6b5881
+                    - cell "Aug 28, 20242 years ago" [ref=f2e578]
+                  - row [ref=f2e580]:
+                    - cell [ref=f2e581]:
+                      - link "eslint.config.mjs, (File)" [ref=f2e588] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/eslint.config.mjs
+                        - text: eslint.config.mjs
+                    - cell [ref=f2e589]:
+                      - generic [ref=f2e591]:
+                        - 'link "chore: start v8 profiler from bootstrap via PW_PROFILE_DIR (" [ref=f2e592] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/c603e4a1f6524efdf211d0e40e9ed8e1027548ee
+                        - link "#43054" [ref=f2e593] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43054
+                        - link ")" [ref=f2e594] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/c603e4a1f6524efdf211d0e40e9ed8e1027548ee
+                    - cell "Oct 1, 202627 days ago" [ref=f2e595]
+                  - row [ref=f2e597]:
+                    - cell [ref=f2e598]:
+                      - link "package-lock.json, (File)" [ref=f2e605] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/package-lock.json
+                        - text: package-lock.json
+                    - cell [ref=f2e606]:
+                      - generic [ref=f2e608]:
+                        - 'link "chore(deps): bump undici (" [ref=f2e609] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/e478109de5542aa6bd69f817d6cb054523af9ce4
+                        - link "#43609" [ref=f2e610] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43609
+                        - link ")" [ref=f2e611] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/e478109de5542aa6bd69f817d6cb054523af9ce4
+                    - cell "Oct 26, 20263 days ago" [ref=f2e612]
+                  - row [ref=f2e614]:
+                    - cell [ref=f2e615]:
+                      - link "package.json, (File)" [ref=f2e622] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/package.json
+                        - text: package.json
+                    - cell [ref=f2e623]:
+                      - generic [ref=f2e625]:
+                        - 'link "chore(deps-dev): bump electron from 42.11.3 to 42.11.16 (" [ref=f2e626] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/5cabe8e9ba47f73fea53533120fff7ee354af473
+                        - link "#43611" [ref=f2e627] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/43611
+                        - link ")" [ref=f2e628] [cursor=pointer]:
+                          - /url: /microsoft/playwright/commit/5cabe8e9ba47f73fea53533120fff7ee354af473
+                    - cell "Oct 26, 20263 days ago" [ref=f2e629]
+                  - row [ref=f2e631]:
+                    - cell [ref=f2e632]:
+                      - link "tsconfig.json, (File)" [ref=f2e639] [cursor=pointer]:
+                        - /url: /microsoft/playwright/blob/main/tsconfig.json
+                        - text: tsconfig.json
+                    - cell [ref=f2e640]:
+                      - generic [ref=f2e642]:
+                        - 'link "feat(ct): type mount() story ids through a generated Stories registry (" [ref=f2e643] [cursor=pointer]':
+                          - /url: /microsoft/playwright/commit/bfb42e5993fcfab0e4cf98b0938b3ad005cd43ab
+                        - link "…" [ref=f2e644] [cursor=pointer]:
+                          - /url: https://github.com/microsoft/playwright/pull/42518
+                    - cell "Sep 3, 2026last month" [ref=f2e645]
+            - generic [ref=f2e648]:
+              - generic [ref=f2e649]:
+                - heading "Repository files navigation" [level=2] [ref=f2e650]
+                - navigation "Repository files" [ref=f2e651]:
+                  - list [ref=f2e652]:
+                    - listitem [ref=f2e653]:
+                      - link "README" [ref=f2e654] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f2e659]:
+                      - link "Code of conduct" [ref=f2e660] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f2e665]:
+                      - link "Contributing" [ref=f2e666] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f2e671]:
+                      - link "Apache-2.0 license" [ref=f2e672] [cursor=pointer]:
+                        - /url: "#"
+                    - listitem [ref=f2e677]:
+                      - link "Security" [ref=f2e678] [cursor=pointer]:
+                        - /url: "#"
+                - button "Outline" [ref=f2e683] [cursor=pointer]
+              - article [ref=f2e687]:
+                - generic [ref=f2e688]:
+                  - heading "🎭 Playwright" [level=1] [ref=f2e689]
+                  - 'link "Permalink: 🎭 Playwright" [ref=f2e690] [cursor=pointer]':
+                    - /url: "#-playwright"
+                - paragraph [ref=f2e693]:
+                  - link [ref=f2e694] [cursor=pointer]:
+                    - /url: https://www.npmjs.com/package/playwright
+                    - img "npm version" [ref=f2e695]
+                  - link [ref=f2e696] [cursor=pointer]:
+                    - /url: https://www.chromium.org/Home
+                    - img "Chromium version" [ref=f2e697]
+                  - link [ref=f2e698] [cursor=pointer]:
+                    - /url: https://www.mozilla.org/en-US/firefox/new/
+                    - img "Firefox version" [ref=f2e699]
+                  - link [ref=f2e700] [cursor=pointer]:
+                    - /url: https://webkit.org/
+                    - img "WebKit version" [ref=f2e701]
+                  - link [ref=f2e702] [cursor=pointer]:
+                    - /url: https://aka.ms/playwright/discord
+                    - img "Join Discord" [ref=f2e703]
+                - generic [ref=f2e704]:
+                  - heading [level=2] [ref=f2e705]:
+                    - link "Documentation" [ref=f2e706] [cursor=pointer]:
+                      - /url: https://playwright.dev
+                    - text: "|"
+                    - link "API reference" [ref=f2e707] [cursor=pointer]:
+                      - /url: https://playwright.dev/docs/api/class-playwright
+                  - 'link "Permalink: Documentation | API reference" [ref=f2e708] [cursor=pointer]':
+                    - /url: "#documentation--api-reference"
+                - paragraph [ref=f2e711]: Playwright is a framework for web automation and testing. It drives Chromium, Firefox, and WebKit with a single API — in your tests, in your scripts, and as a tool for AI agents.
+                - generic [ref=f2e712]:
+                  - heading "Get Started" [level=2] [ref=f2e713]
+                  - 'link "Permalink: Get Started" [ref=f2e714] [cursor=pointer]':
+                    - /url: "#get-started"
+                - paragraph [ref=f2e717]: "Choose the path that fits your workflow:"
+                - table [ref=f2e719]:
+                  - rowgroup [ref=f2e720]:
+                    - row [ref=f2e721]:
+                      - columnheader [ref=f2e722]
+                      - columnheader "Best for" [ref=f2e723]
+                      - columnheader "Install" [ref=f2e724]
+                  - rowgroup [ref=f2e725]:
+                    - row [ref=f2e726]:
+                      - cell [ref=f2e727]:
+                        - strong [ref=f2e728]:
+                          - link "Playwright Test" [ref=f2e729] [cursor=pointer]:
+                            - /url: "#playwright-test"
+                      - cell "End-to-end testing" [ref=f2e730]
+                      - cell [ref=f2e731]:
+                        - code [ref=f2e732]: npm init playwright@latest
+                    - row [ref=f2e733]:
+                      - cell [ref=f2e734]:
+                        - strong [ref=f2e735]:
+                          - link "Playwright CLI" [ref=f2e736] [cursor=pointer]:
+                            - /url: "#playwright-cli"
+                      - cell "Coding agents (Claude Code, Copilot)" [ref=f2e737]
+                      - cell [ref=f2e738]:
+                        - code [ref=f2e739]: npm i -g @playwright/cli@latest
+                    - row [ref=f2e740]:
+                      - cell [ref=f2e741]:
+                        - strong [ref=f2e742]:
+                          - link "Playwright MCP" [ref=f2e743] [cursor=pointer]:
+                            - /url: "#playwright-mcp"
+                      - cell "AI agents and LLM-driven automation" [ref=f2e744]
+                      - cell [ref=f2e745]:
+                        - code [ref=f2e746]: npx @playwright/mcp@latest
+                    - row [ref=f2e747]:
+                      - cell [ref=f2e748]:
+                        - strong [ref=f2e749]:
+                          - link "Playwright Library" [ref=f2e750] [cursor=pointer]:
+                            - /url: "#playwright-library"
+                      - cell "Browser automation scripts" [ref=f2e751]
+                      - cell [ref=f2e752]:
+                        - code [ref=f2e753]: npm i playwright
+                    - row [ref=f2e754]:
+                      - cell [ref=f2e755]:
+                        - strong [ref=f2e756]:
+                          - link "VS Code Extension" [ref=f2e757] [cursor=pointer]:
+                            - /url: "#vs-code-extension"
+                      - cell "Test authoring and debugging in VS Code" [ref=f2e758]
+                      - cell [ref=f2e759]:
+                        - link "Install from Marketplace" [ref=f2e760] [cursor=pointer]:
+                          - /url: https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
+                - separator [ref=f2e761]
+                - generic [ref=f2e762]:
+                  - heading "Playwright Test" [level=2] [ref=f2e763]
+                  - 'link "Permalink: Playwright Test" [ref=f2e764] [cursor=pointer]':
+                    - /url: "#playwright-test"
+                - paragraph [ref=f2e767]: Playwright Test is a full-featured test runner built for end-to-end testing. It runs tests across Chromium, Firefox, and WebKit with full browser isolation, auto-waiting, and web-first assertions.
+                - generic [ref=f2e768]:
+                  - heading "Install" [level=3] [ref=f2e769]
+                  - 'link "Permalink: Install" [ref=f2e770] [cursor=pointer]':
+                    - /url: "#install"
+                - generic [ref=f2e773]:
+                  - generic [ref=f2e774]: npm init playwright@latest
+                  - button "Copy code to clipboard" [ref=f2e776] [cursor=pointer]
+                - paragraph [ref=f2e780]: "Or add manually:"
+                - generic [ref=f2e781]:
+                  - generic [ref=f2e782]: npm i -D @playwright/test npx playwright install
+                  - button "Copy code to clipboard" [ref=f2e784] [cursor=pointer]
+                - generic [ref=f2e788]:
+                  - heading "Write a test" [level=3] [ref=f2e789]
+                  - 'link "Permalink: Write a test" [ref=f2e790] [cursor=pointer]':
+                    - /url: "#write-a-test"
+                - generic [ref=f2e793]:
+                  - generic [ref=f2e794]:
+                    - text: "import { test, expect } from '@playwright/test'; test('has title', async ({ page }) => { await page.goto('https://playwright.dev/'); await expect(page).toHaveTitle("
+                    - generic [ref=f2e795]: /Playwright/
+                    - text: "); }); test('get started link', async ({ page }) => { await page.goto('https://playwright.dev/'); await page.getByRole('link', { name: 'Get started' }).click(); await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible(); });"
+                  - button "Copy code to clipboard" [ref=f2e797] [cursor=pointer]
+                - generic [ref=f2e801]:
+                  - heading "Run tests" [level=3] [ref=f2e802]
+                  - 'link "Permalink: Run tests" [ref=f2e803] [cursor=pointer]':
+                    - /url: "#run-tests"
+                - generic [ref=f2e806]:
+                  - generic [ref=f2e807]: npx playwright test
+                  - button "Copy code to clipboard" [ref=f2e809] [cursor=pointer]
+                - paragraph [ref=f2e813]: Tests run in parallel across all configured browsers, in headless mode by default. Each test gets a fresh browser context — full isolation with near-zero overhead.
+                - generic [ref=f2e814]:
+                  - heading "Key capabilities" [level=3] [ref=f2e815]
+                  - 'link "Permalink: Key capabilities" [ref=f2e816] [cursor=pointer]':
+                    - /url: "#key-capabilities"
+                - paragraph [ref=f2e819]:
+                  - strong [ref=f2e820]: Auto-wait and web-first assertions.
+                  - text: No artificial timeouts. Playwright waits for elements to be actionable, and assertions automatically retry until conditions are met.
+                - paragraph [ref=f2e821]:
+                  - strong [ref=f2e822]: Locators.
+                  - text: "Find elements with resilient locators that mirror how users see the page:"
+                - generic [ref=f2e823]:
+                  - generic [ref=f2e824]: "page.getByRole('button', { name: 'Submit' }) page.getByLabel('Email') page.getByPlaceholder('Search...') page.getByTestId('login-form')"
+                  - button "Copy code to clipboard" [ref=f2e826] [cursor=pointer]
+                - paragraph [ref=f2e830]:
+                  - strong [ref=f2e831]: Test isolation.
+                  - text: "Each test runs in its own browser context — equivalent to a fresh browser profile. Save authentication state once and reuse it across tests:"
+                - generic [ref=f2e832]:
+                  - generic [ref=f2e833]: "// Save state after login await page.context().storageState({ path: 'auth.json' }); // Reuse in other tests test.use({ storageState: 'auth.json' });"
+                  - button "Copy code to clipboard" [ref=f2e835] [cursor=pointer]
+                - paragraph [ref=f2e839]:
+                  - strong [ref=f2e840]: Tracing.
+                  - text: Capture execution traces, screenshots, and videos on failure. Inspect every action, DOM snapshot, network request, and console message in the
+                  - link "Trace Viewer" [ref=f2e841] [cursor=pointer]:
+                    - /url: https://playwright.dev/docs/trace-viewer
+                  - text: ":"
+                - generic [ref=f2e842]:
+                  - generic [ref=f2e843]: "// playwright.config.ts export default defineConfig({ use: { trace: 'on-first-retry', }, });"
+                  - button "Copy code to clipboard" [ref=f2e845] [cursor=pointer]
+                - generic [ref=f2e849]:
+                  - generic [ref=f2e850]: npx playwright show-trace trace.zip
+                  - button "Copy code to clipboard" [ref=f2e852] [cursor=pointer]
+                - paragraph [ref=f2e856]:
+                  - strong [ref=f2e857]: Parallelism.
+                  - text: Tests run in parallel by default across all configured browsers.
+                - paragraph [ref=f2e858]:
+                  - link "Full testing documentation" [ref=f2e859] [cursor=pointer]:
+                    - /url: https://playwright.dev/docs/intro
+                - separator [ref=f2e860]
+                - generic [ref=f2e861]:
+                  - heading "Playwright CLI" [level=2] [ref=f2e862]
+                  - 'link "Permalink: Playwright CLI" [ref=f2e863] [cursor=pointer]':
+                    - /url: "#playwright-cli"
+                - paragraph [ref=f2e866]:
+                  - link "Playwright CLI" [ref=f2e867] [cursor=pointer]:
+                    - /url: https://github.com/microsoft/playwright-cli
+                  - text: is a command-line interface for browser automation designed for coding agents. It's more token-efficient than MCP — commands avoid loading large tool schemas and accessibility trees into the model context.
+                - generic [ref=f2e868]:
+                  - heading "Install" [level=3] [ref=f2e869]
+                  - 'link "Permalink: Install" [ref=f2e870] [cursor=pointer]':
+                    - /url: "#install-1"
+                - generic [ref=f2e873]:
+                  - generic [ref=f2e874]: npm install -g @playwright/cli@latest
+                  - button "Copy code to clipboard" [ref=f2e876] [cursor=pointer]
+                - paragraph [ref=f2e880]: "Optionally install skills for richer agent integration:"
+                - generic [ref=f2e881]:
+                  - generic [ref=f2e882]: playwright-cli install --skills
+                  - button "Copy code to clipboard" [ref=f2e884] [cursor=pointer]
+                - generic [ref=f2e888]:
+                  - heading "Usage" [level=3] [ref=f2e889]
+                  - 'link "Permalink: Usage" [ref=f2e890] [cursor=pointer]':
+                    - /url: "#usage"
+                - paragraph [ref=f2e893]: "Point your coding agent at a task:"
+                - generic [ref=f2e894]:
+                  - code [ref=f2e896]: Test the "add todo" flow on https://demo.playwright.dev/todomvc using playwright-cli. Take screenshots for all successful and failing scenarios.
+                  - button "Copy code to clipboard" [ref=f2e898] [cursor=pointer]
+                - paragraph [ref=f2e902]: "Or run commands directly:"
+                - generic [ref=f2e903]:
+                  - generic [ref=f2e904]:
+                    - text: playwright-cli open https://demo.playwright.dev/todomvc/ --headed playwright-cli type
+                    - generic [ref=f2e905]: "\"Buy groceries\""
+                    - text: playwright-cli press Enter playwright-cli screenshot
+                  - button "Copy code to clipboard" [ref=f2e907] [cursor=pointer]
+                - generic [ref=f2e911]:
+                  - heading "Session monitoring" [level=3] [ref=f2e912]
+                  - 'link "Permalink: Session monitoring" [ref=f2e913] [cursor=pointer]':
+                    - /url: "#session-monitoring"
+                - paragraph [ref=f2e916]:
+                  - text: Use
+                  - code [ref=f2e917]: playwright-cli show
+                  - text: to open a visual dashboard with live screencast previews of all running browser sessions. Click any session to zoom in and take remote control.
+                - generic [ref=f2e918]:
+                  - generic [ref=f2e919]: playwright-cli show
+                  - button "Copy code to clipboard" [ref=f2e921] [cursor=pointer]
+                - paragraph [ref=f2e925]:
+                  - link "Full CLI documentation" [ref=f2e926] [cursor=pointer]:
+                    - /url: https://playwright.dev/agent-cli/introduction
+                  - text: "|"
+                  - link "GitHub" [ref=f2e927] [cursor=pointer]:
+                    - /url: https://github.com/microsoft/playwright-cli
+                - separator [ref=f2e928]
+                - generic [ref=f2e929]:
+                  - heading "Playwright MCP" [level=2] [ref=f2e930]
+                  - 'link "Permalink: Playwright MCP" [ref=f2e931] [cursor=pointer]':
+                    - /url: "#playwright-mcp"
+                - paragraph [ref=f2e934]:
+                  - text: The
+                  - link "Playwright MCP server" [ref=f2e935] [cursor=pointer]:
+                    - /url: https://github.com/microsoft/playwright-mcp
+                  - text: gives AI agents full browser control through the
+                  - link "Model Context Protocol" [ref=f2e936] [cursor=pointer]:
+                    - /url: https://modelcontextprotocol.io
+                  - text: . Agents interact with pages using structured accessibility snapshots — no vision models or screenshots required.
+                - generic [ref=f2e937]:
+                  - heading "Setup" [level=3] [ref=f2e938]
+                  - 'link "Permalink: Setup" [ref=f2e939] [cursor=pointer]':
+                    - /url: "#setup"
+                - paragraph [ref=f2e942]: "Add to your MCP client (VS Code, Cursor, Claude Desktop, Windsurf, etc.):"
+                - generic [ref=f2e943]:
+                  - generic [ref=f2e944]:
+                    - text: "{ \"mcpServers\": { \"playwright\": { \"command\":"
+                    - generic [ref=f2e945]: "\"npx\""
+                    - text: ", \"args\": ["
+                    - generic [ref=f2e946]: "\"@playwright/mcp@latest\""
+                    - text: "] } } }"
+                  - button "Copy code to clipboard" [ref=f2e948] [cursor=pointer]
+                - paragraph [ref=f2e952]:
+                  - strong [ref=f2e953]: "One-click install for VS Code:"
+                - paragraph [ref=f2e954]:
+                  - link [ref=f2e955] [cursor=pointer]:
+                    - /url: https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522playwright%2522%252C%2522command%2522%253A%2522npx%2522%252C%2522args%2522%253A%255B%2522%2540playwright%252Fmcp%2540latest%2522%255D%257D
+                    - img "Install in VS Code" [ref=f2e956]
+                - paragraph [ref=f2e957]:
+                  - strong [ref=f2e958]: "For Claude Code:"
+                - generic [ref=f2e959]:
+                  - generic [ref=f2e960]: claude mcp add playwright npx @playwright/mcp@latest
+                  - button "Copy code to clipboard" [ref=f2e962] [cursor=pointer]
+                - generic [ref=f2e966]:
+                  - heading "How it works" [level=3] [ref=f2e967]
+                  - 'link "Permalink: How it works" [ref=f2e968] [cursor=pointer]':
+                    - /url: "#how-it-works"
+                - paragraph [ref=f2e971]: "Ask your AI assistant to interact with any web page:"
+                - generic [ref=f2e972]:
+                  - code [ref=f2e974]: Navigate to https://demo.playwright.dev/todomvc and add a few todo items.
+                  - button "Copy code to clipboard" [ref=f2e976] [cursor=pointer]
+                - paragraph [ref=f2e980]: "The agent sees the page as a structured accessibility tree:"
+                - generic [ref=f2e981]:
+                  - code [ref=f2e983]: "- heading \"todos\" [level=1] - textbox \"What needs to be done?\" [ref=e5] - listitem: - checkbox \"Toggle Todo\" [ref=e10] - text: \"Buy groceries\""
+                  - button "Copy code to clipboard" [ref=f2e985] [cursor=pointer]
+                - paragraph [ref=f2e989]:
+                  - text: It uses element refs like
+                  - code [ref=f2e990]: e5
+                  - text: and
+                  - code [ref=f2e991]: e10
+                  - text: to click, type, and interact — deterministically and without visual ambiguity. Tools cover navigation, form filling, screenshots, network mocking, storage management, and more.
+                - paragraph [ref=f2e992]:
+                  - link "Full MCP documentation" [ref=f2e993] [cursor=pointer]:
+                    - /url: https://playwright.dev/mcp/introduction
+                  - text: "|"
+                  - link "GitHub" [ref=f2e994] [cursor=pointer]:
+                    - /url: https://github.com/microsoft/playwright-mcp
+                - separator [ref=f2e995]
+                - generic [ref=f2e996]:
+                  - heading "Playwright Library" [level=2] [ref=f2e997]
+                  - 'link "Permalink: Playwright Library" [ref=f2e998] [cursor=pointer]':
+                    - /url: "#playwright-library"
+                - paragraph [ref=f2e1001]:
+                  - text: Use
+                  - code [ref=f2e1002]: playwright
+                  - text: as a library for browser automation scripts — web scraping, PDF generation, screenshot capture, and any workflow that needs programmatic browser control without a test runner.
+                - generic [ref=f2e1003]:
+                  - heading "Install" [level=3] [ref=f2e1004]
+                  - 'link "Permalink: Install" [ref=f2e1005] [cursor=pointer]':
+                    - /url: "#install-2"
+                - generic [ref=f2e1008]:
+                  - generic [ref=f2e1009]: npm i playwright
+                  - button "Copy code to clipboard" [ref=f2e1011] [cursor=pointer]
+                - generic [ref=f2e1015]:
+                  - heading "Examples" [level=3] [ref=f2e1016]
+                  - 'link "Permalink: Examples" [ref=f2e1017] [cursor=pointer]':
+                    - /url: "#examples"
+                - paragraph [ref=f2e1020]:
+                  - strong [ref=f2e1021]: "Take a screenshot:"
+                - generic [ref=f2e1022]:
+                  - generic [ref=f2e1023]: "import { chromium } from 'playwright'; const browser = await chromium.launch(); const page = await browser.newPage(); await page.goto('https://playwright.dev/'); await page.screenshot({ path: 'screenshot.png' }); await browser.close();"
+                  - button "Copy code to clipboard" [ref=f2e1025] [cursor=pointer]
+                - paragraph [ref=f2e1029]:
+                  - strong [ref=f2e1030]: "Generate a PDF:"
+                - generic [ref=f2e1031]:
+                  - generic [ref=f2e1032]: "import { chromium } from 'playwright'; const browser = await chromium.launch(); const page = await browser.newPage(); await page.goto('https://playwright.dev/'); await page.pdf({ path: 'page.pdf', format: 'A4' }); await browser.close();"
+                  - button "Copy code to clipboard" [ref=f2e1034] [cursor=pointer]
+                - paragraph [ref=f2e1038]:
+                  - strong [ref=f2e1039]: "Emulate a mobile device:"
+                - generic [ref=f2e1040]:
+                  - generic [ref=f2e1041]: "import { chromium, devices } from 'playwright'; const browser = await chromium.launch(); const context = await browser.newContext(devices['iPhone 15']); const page = await context.newPage(); await page.goto('https://playwright.dev/'); await page.screenshot({ path: 'mobile.png' }); await browser.close();"
+                  - button "Copy code to clipboard" [ref=f2e1043] [cursor=pointer]
+                - paragraph [ref=f2e1047]:
+                  - strong [ref=f2e1048]: "Intercept network requests:"
+                - generic [ref=f2e1049]:
+                  - generic [ref=f2e1050]: "import { chromium } from 'playwright'; const browser = await chromium.launch(); const page = await browser.newPage(); await page.route('**/*.{png,jpg,jpeg}', route => route.abort()); await page.goto('https://playwright.dev/'); await browser.close();"
+                  - button "Copy code to clipboard" [ref=f2e1052] [cursor=pointer]
+                - paragraph [ref=f2e1056]:
+                  - link "Library documentation" [ref=f2e1057] [cursor=pointer]:
+                    - /url: https://playwright.dev/docs/library
+                  - text: "|"
+                  - link "API reference" [ref=f2e1058] [cursor=pointer]:
+                    - /url: https://playwright.dev/docs/api/class-playwright
+                - separator [ref=f2e1059]
+                - generic [ref=f2e1060]:
+                  - heading "VS Code Extension" [level=2] [ref=f2e1061]
+                  - 'link "Permalink: VS Code Extension" [ref=f2e1062] [cursor=pointer]':
+                    - /url: "#vs-code-extension"
+                - paragraph [ref=f2e1065]:
+                  - text: The
+                  - link "Playwright VS Code extension" [ref=f2e1066] [cursor=pointer]:
+                    - /url: https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
+                  - text: brings test running, debugging, and code generation directly into your editor.
+                - paragraph [ref=f2e1067]:
+                  - strong [ref=f2e1068]: Run and debug tests
+                  - text: from the editor with a single click. Set breakpoints, inspect variables, and step through test execution with a live browser view.
+                - paragraph [ref=f2e1069]:
+                  - strong [ref=f2e1070]: Generate tests with CodeGen.
+                  - text: Click "Record new" to open a browser — navigate and interact with your app while Playwright writes the test code for you.
+                - paragraph [ref=f2e1071]:
+                  - strong [ref=f2e1072]: Pick locators.
+                  - text: Hover over any element in the browser to see the best available locator, then click to copy it to your clipboard.
+                - paragraph [ref=f2e1073]:
+                  - strong [ref=f2e1074]: Trace Viewer integration.
+                  - text: Enable "Show Trace Viewer" in the sidebar to get a full execution trace after each test run — DOM snapshots, network requests, console logs, and screenshots at every step.
+                - paragraph [ref=f2e1075]:
+                  - link "Install the extension" [ref=f2e1076] [cursor=pointer]:
+                    - /url: https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright
+                  - text: "|"
+                  - link "VS Code guide" [ref=f2e1077] [cursor=pointer]:
+                    - /url: https://playwright.dev/docs/getting-started-vscode
+                - separator [ref=f2e1078]
+                - generic [ref=f2e1079]:
+                  - heading "Cross-Browser Support" [level=2] [ref=f2e1080]
+                  - 'link "Permalink: Cross-Browser Support" [ref=f2e1081] [cursor=pointer]':
+                    - /url: "#cross-browser-support"
+                - table [ref=f2e1085]:
+                  - rowgroup [ref=f2e1086]:
+                    - row [ref=f2e1087]:
+                      - columnheader [ref=f2e1088]
+                      - columnheader "Linux" [ref=f2e1089]
+                      - columnheader "macOS" [ref=f2e1090]
+                      - columnheader "Windows" [ref=f2e1091]
+                  - rowgroup [ref=f2e1092]:
+                    - row [ref=f2e1093]:
+                      - cell [ref=f2e1094]:
+                        - text: Chromium
+                        - superscript [ref=f2e1095]: "1"
+                        - text: 157.0.8103.15
+                      - cell "✅" [ref=f2e1096]
+                      - cell "✅" [ref=f2e1097]
+                      - cell "✅" [ref=f2e1098]
+                    - row [ref=f2e1099]:
+                      - cell "WebKit 27.2" [ref=f2e1100]
+                      - cell "✅" [ref=f2e1101]
+                      - cell "✅" [ref=f2e1102]
+                      - cell "✅" [ref=f2e1103]
+                    - row [ref=f2e1104]:
+                      - cell "Firefox 158.0" [ref=f2e1105]
+                      - cell "✅" [ref=f2e1106]
+                      - cell "✅" [ref=f2e1107]
+                      - cell "✅" [ref=f2e1108]
+                - paragraph [ref=f2e1109]:
+                  - text: Headless and headed execution on all platforms.
+                  - superscript [ref=f2e1110]: "1"
+                  - text: Uses
+                  - link "Chrome for Testing" [ref=f2e1111] [cursor=pointer]:
+                    - /url: https://developer.chrome.com/blog/chrome-for-testing
+                  - text: by default.
+                - generic [ref=f2e1112]:
+                  - heading "Other Languages" [level=2] [ref=f2e1113]
+                  - 'link "Permalink: Other Languages" [ref=f2e1114] [cursor=pointer]':
+                    - /url: "#other-languages"
+                - paragraph [ref=f2e1117]:
+                  - text: Playwright is also available for
+                  - link "Python" [ref=f2e1118] [cursor=pointer]:
+                    - /url: https://playwright.dev/python/docs/intro
+                  - text: ","
+                  - link ".NET" [ref=f2e1119] [cursor=pointer]:
+                    - /url: https://playwright.dev/dotnet/docs/intro
+                  - text: ", and"
+                  - link "Java" [ref=f2e1120] [cursor=pointer]:
+                    - /url: https://playwright.dev/java/docs/intro
+                  - text: .
+                - generic [ref=f2e1121]:
+                  - heading "Resources" [level=2] [ref=f2e1122]
+                  - 'link "Permalink: Resources" [ref=f2e1123] [cursor=pointer]':
+                    - /url: "#resources"
+                - list [ref=f2e1126]:
+                  - listitem [ref=f2e1127]:
+                    - link "Documentation" [ref=f2e1128] [cursor=pointer]:
+                      - /url: https://playwright.dev
+                  - listitem [ref=f2e1129]:
+                    - link "API reference" [ref=f2e1130] [cursor=pointer]:
+                      - /url: https://playwright.dev/docs/api/class-playwright
+                  - listitem [ref=f2e1131]:
+                    - link "MCP server" [ref=f2e1132] [cursor=pointer]:
+                      - /url: https://github.com/microsoft/playwright-mcp
+                  - listitem [ref=f2e1133]:
+                    - link "CLI for coding agents" [ref=f2e1134] [cursor=pointer]:
+                      - /url: https://github.com/microsoft/playwright-cli
+                  - listitem [ref=f2e1135]:
+                    - link "VS Code extension" [ref=f2e1136] [cursor=pointer]:
+                      - /url: https://github.com/microsoft/playwright-vscode
+                  - listitem [ref=f2e1137]:
+                    - link "Contribution guide" [ref=f2e1138] [cursor=pointer]:
+                      - /url: /microsoft/playwright/blob/main/CONTRIBUTING.md
+                  - listitem [ref=f2e1139]:
+                    - link "Changelog" [ref=f2e1140] [cursor=pointer]:
+                      - /url: https://github.com/microsoft/playwright/releases
+                  - listitem [ref=f2e1141]:
+                    - link "Discord" [ref=f2e1142] [cursor=pointer]:
+                      - /url: https://aka.ms/playwright/discord
+        - generic [ref=f2e1145]:
+          - generic [ref=f2e1146]:
+            - heading "About" [level=2] [ref=f2e1147]
+            - paragraph [ref=f2e1148]: Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.
+            - generic "https://playwright.dev" [ref=f2e1152]:
+              - link "playwright.dev" [ref=f2e1153] [cursor=pointer]:
+                - /url: https://playwright.dev
+            - heading "Topics" [level=3] [ref=f2e1154]
+            - generic [ref=f2e1155]:
+              - link "automation" [ref=f2e1156] [cursor=pointer]:
+                - /url: /topics/automation
+              - link "chrome" [ref=f2e1157] [cursor=pointer]:
+                - /url: /topics/chrome
+              - link "chromium" [ref=f2e1158] [cursor=pointer]:
+                - /url: /topics/chromium
+              - link "e2e-testing" [ref=f2e1159] [cursor=pointer]:
+                - /url: /topics/e2e-testing
+              - link "electron" [ref=f2e1160] [cursor=pointer]:
+                - /url: /topics/electron
+              - link "end-to-end-testing" [ref=f2e1161] [cursor=pointer]:
+                - /url: /topics/end-to-end-testing
+              - link "firefox" [ref=f2e1162] [cursor=pointer]:
+                - /url: /topics/firefox
+              - link "javascript" [ref=f2e1163] [cursor=pointer]:
+                - /url: /topics/javascript
+              - link "playwright" [ref=f2e1164] [cursor=pointer]:
+                - /url: /topics/playwright
+              - link "test" [ref=f2e1165] [cursor=pointer]:
+                - /url: /topics/test
+              - link "test-automation" [ref=f2e1166] [cursor=pointer]:
+                - /url: /topics/test-automation
+              - link "testing" [ref=f2e1167] [cursor=pointer]:
+                - /url: /topics/testing
+              - link "testing-tools" [ref=f2e1168] [cursor=pointer]:
+                - /url: /topics/testing-tools
+              - link "web" [ref=f2e1169] [cursor=pointer]:
+                - /url: /topics/web
+              - link "webkit" [ref=f2e1170] [cursor=pointer]:
+                - /url: /topics/webkit
+            - heading "Resources" [level=3] [ref=f2e1171]
+            - link "Readme" [ref=f2e1173] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+            - link "Apache-2.0 license" [ref=f2e1177] [cursor=pointer]:
+              - /url: "#Apache-2.0-1-ov-file"
+            - heading "Code of conduct" [level=3] [ref=f2e1180]
+            - link "Code of conduct" [ref=f2e1182] [cursor=pointer]:
+              - /url: /microsoft/playwright#coc-ov-file
+            - heading "Contributing" [level=3] [ref=f2e1185]
+            - link "Contributing" [ref=f2e1187] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+            - heading "Security policy" [level=3] [ref=f2e1190]
+            - link "Security policy" [ref=f2e1192] [cursor=pointer]:
+              - /url: "#security-ov-file"
+            - generic [ref=f2e1195]:
+              - generic [ref=f2e1196]:
+                - link "Activity" [ref=f2e1198] [cursor=pointer]:
+                  - /url: /microsoft/playwright/activity
+                - link "Custom properties" [ref=f2e1202] [cursor=pointer]:
+                  - /url: /microsoft/playwright/custom-properties
+              - generic [ref=f2e1205]:
+                - heading "Stars" [level=3] [ref=f2e1206]
+                - generic [ref=f2e1208]:
+                  - strong [ref=f2e1211]: 98.8k
+                  - text: stars
+                - heading "Watchers" [level=3] [ref=f2e1212]
+                - generic [ref=f2e1214]:
+                  - strong [ref=f2e1217]: "615"
+                  - text: watching
+                - heading "Forks" [level=3] [ref=f2e1218]
+                - link [ref=f2e1220] [cursor=pointer]:
+                  - /url: /microsoft/playwright/forks
+                  - strong [ref=f2e1224]: 6.7k
+                  - text: forks
+            - link "Report repository" [ref=f2e1226] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fmicrosoft%2Fplaywright&report=microsoft+%28user%29
+          - generic [ref=f2e1227]:
+            - heading "Releases (168)" [level=2] [ref=f2e1228]:
+              - generic [ref=f2e1229]:
+                - link "Releases" [ref=f2e1230] [cursor=pointer]:
+                  - /url: /microsoft/playwright/releases
+                - generic [aria-hidden] [ref=f2e1231]: "168"
+                - generic [ref=f2e1232]: (168)
+            - link "v1.64.1 Latest Oct 14, 20262 weeks ago" [ref=f2e1233] [cursor=pointer]:
+              - /url: /microsoft/playwright/releases/tag/v1.64.1
+              - generic [ref=f2e1236]:
+                - generic [ref=f2e1237]:
+                  - generic "v1.64.1" [ref=f2e1238]
+                  - generic [ref=f2e1239]: Latest
+                - generic [ref=f2e1240]: Oct 14, 20262 weeks ago
+            - link "+ 167 releases" [ref=f2e1242] [cursor=pointer]:
+              - /url: /microsoft/playwright/releases
+          - generic [ref=f2e1243]:
+            - heading "Used by (540K)" [level=2] [ref=f2e1244]:
+              - generic [ref=f2e1245]:
+                - link "Used by" [ref=f2e1246] [cursor=pointer]:
+                  - /url: /microsoft/playwright/network/dependents
+                - generic [aria-hidden] [ref=f2e1247]: 540K
+                - generic [ref=f2e1248]: (540K)
+            - link "@mujflix-team @maartenesser @ariel-avi @A1ex-01 @Karthickcjx + 541,225" [ref=f2e1249] [cursor=pointer]:
+              - /url: /microsoft/playwright/network/dependents
+              - generic [ref=f2e1251]:
+                - img "@mujflix-team" [ref=f2e1252]
+                - img "@maartenesser" [ref=f2e1253]
+                - img "@ariel-avi" [ref=f2e1254]
+                - img "@A1ex-01" [ref=f2e1255]
+                - img "@Karthickcjx" [ref=f2e1256]
+              - generic [ref=f2e1257]: + 541,225
+          - generic [ref=f2e1258]:
+            - heading "Contributors (808)" [level=2] [ref=f2e1259]:
+              - generic [ref=f2e1260]:
+                - link "Contributors" [ref=f2e1261] [cursor=pointer]:
+                  - /url: /microsoft/playwright/graphs/contributors
+                - generic [aria-hidden] [ref=f2e1262]: "808"
+                - generic [ref=f2e1263]: (808)
+            - list [ref=f2e1264]:
+              - listitem [ref=f2e1265]:
+                - link [ref=f2e1266] [cursor=pointer]:
+                  - /url: /pavelfeldman
+                  - img "@pavelfeldman" [ref=f2e1267]
+              - listitem [ref=f2e1268]:
+                - link [ref=f2e1269] [cursor=pointer]:
+                  - /url: /dgozman
+                  - img "@dgozman" [ref=f2e1270]
+              - listitem [ref=f2e1271]:
+                - link [ref=f2e1272] [cursor=pointer]:
+                  - /url: /yury-s
+                  - img "@yury-s" [ref=f2e1273]
+              - listitem [ref=f2e1274]:
+                - link [ref=f2e1275] [cursor=pointer]:
+                  - /url: /mxschmitt
+                  - img "@mxschmitt" [ref=f2e1276]
+              - listitem [ref=f2e1277]:
+                - link [ref=f2e1278] [cursor=pointer]:
+                  - /url: /aslushnikov
+                  - img "@aslushnikov" [ref=f2e1279]
+              - listitem [ref=f2e1280]:
+                - link [ref=f2e1281] [cursor=pointer]:
+                  - /url: /github-actions[bot]
+                  - img "@github-actions[bot]" [ref=f2e1282]
+              - listitem [ref=f2e1283]:
+                - link [ref=f2e1284] [cursor=pointer]:
+                  - /url: /playwrightmachine
+                  - img "@playwrightmachine" [ref=f2e1285]
+              - listitem [ref=f2e1286]:
+                - link [ref=f2e1287] [cursor=pointer]:
+                  - /url: /Skn0tt
+                  - img "@Skn0tt" [ref=f2e1288]
+              - listitem [ref=f2e1289]:
+                - link [ref=f2e1290] [cursor=pointer]:
+                  - /url: /microsoft-playwright-automation[bot]
+                  - img "@microsoft-playwright-automation[bot]" [ref=f2e1291]
+              - listitem [ref=f2e1292]:
+                - link [ref=f2e1293] [cursor=pointer]:
+                  - /url: /JoelEinbinder
+                  - img "@JoelEinbinder" [ref=f2e1294]
+              - listitem [ref=f2e1295]:
+                - link [ref=f2e1296] [cursor=pointer]:
+                  - /url: /agg23
+                  - img "@agg23" [ref=f2e1297]
+              - listitem [ref=f2e1298]:
+                - link [ref=f2e1299] [cursor=pointer]:
+                  - /url: /debs-obrien
+                  - img "@debs-obrien" [ref=f2e1300]
+              - listitem [ref=f2e1301]:
+                - link [ref=f2e1302] [cursor=pointer]:
+                  - /url: /rwoll
+                  - img "@rwoll" [ref=f2e1303]
+              - listitem [ref=f2e1304]:
+                - link [ref=f2e1305] [cursor=pointer]:
+                  - /url: /sand4rt
+                  - img "@sand4rt" [ref=f2e1306]
+            - link "+ 794 contributors" [ref=f2e1308] [cursor=pointer]:
+              - /url: /microsoft/playwright/graphs/contributors
+          - generic [ref=f2e1309]:
+            - heading "Languages" [level=2] [ref=f2e1310]
+            - generic [ref=f2e1312]:
+              - 'progressbar "TypeScript: 92.2%" [ref=f2e1313]'
+              - 'progressbar "HTML: 3.5%" [ref=f2e1314]'
+              - 'progressbar "CSS: 2.3%" [ref=f2e1315]'
+              - 'progressbar "C++: 0.7%" [ref=f2e1316]'
+              - 'progressbar "Objective-C: 0.5%" [ref=f2e1317]'
+              - 'progressbar "Shell: 0.3%" [ref=f2e1318]'
+              - 'progressbar "Other: 0.5%" [ref=f2e1319]'
+            - list [ref=f2e1320]:
+              - listitem [ref=f2e1321]:
+                - link "TypeScript 92.2%" [ref=f2e1322] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=typescript
+                  - generic [ref=f2e1324]: TypeScript
+                  - generic [ref=f2e1325]: 92.2%
+              - listitem [ref=f2e1326]:
+                - link "HTML 3.5%" [ref=f2e1327] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=html
+                  - generic [ref=f2e1329]: HTML
+                  - generic [ref=f2e1330]: 3.5%
+              - listitem [ref=f2e1331]:
+                - link "CSS 2.3%" [ref=f2e1332] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=css
+                  - generic [ref=f2e1334]: CSS
+                  - generic [ref=f2e1335]: 2.3%
+              - listitem [ref=f2e1336]:
+                - link "C++ 0.7%" [ref=f2e1337] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=c%2B%2B
+                  - generic [ref=f2e1339]: C++
+                  - generic [ref=f2e1340]: 0.7%
+              - listitem [ref=f2e1341]:
+                - link "Objective-C 0.5%" [ref=f2e1342] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=objective-c
+                  - generic [ref=f2e1344]: Objective-C
+                  - generic [ref=f2e1345]: 0.5%
+              - listitem [ref=f2e1346]:
+                - link "Shell 0.3%" [ref=f2e1347] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=shell
+                  - generic [ref=f2e1349]: Shell
+                  - generic [ref=f2e1350]: 0.3%
+              - listitem [ref=f2e1351]:
+                - link "Other 0.5%" [ref=f2e1352] [cursor=pointer]:
+                  - /url: /microsoft/playwright/search?l=Other
+                  - generic [ref=f2e1354]: Other
+                  - generic [ref=f2e1355]: 0.5%
+  - contentinfo [ref=f2e1357]:
+    - heading "Footer" [level=2] [ref=f2e1358]
+    - generic [ref=f2e1359]:
+      - generic [ref=f2e1360]:
+        - link "GitHub Homepage" [ref=f2e1361] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=f2e1364]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=f2e1365]:
+        - heading "Footer navigation" [level=3] [ref=f2e1366]
+        - list "Footer navigation" [ref=f2e1367]:
+          - listitem [ref=f2e1368]:
+            - link "Terms" [ref=f2e1369] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=f2e1370]:
+            - link "Privacy" [ref=f2e1371] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=f2e1372]:
+            - link "Security" [ref=f2e1373] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=f2e1374]:
+            - link "Status" [ref=f2e1375] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=f2e1376]:
+            - link "Community" [ref=f2e1377] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=f2e1378]:
+            - link "Docs" [ref=f2e1379] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=f2e1380]:
+            - link "Contact" [ref=f2e1381] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=f2e1382]:
+            - button "Manage cookies" [ref=f2e1384] [cursor=pointer]
+          - listitem [ref=f2e1385]:
+            - button "Do not share my personal information" [ref=f2e1387] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import { expect, uiTest as test } from '../../src/fixtures';
+  2  | import uiData from '../../testdata/uiData.json';
+  3  | 
+  4  | const repo = uiData.publicRepository;
+  5  | 
+  6  | test.describe('UI | Public repository search', () => {
+  7  |   test('UI-01 search a known public repository and validate its details', { tag: ['@smoke', '@ui'] }, async ({
+  8  |     page,
+  9  |     homePage,
+  10 |     searchResultsPage,
+  11 |     repositoryPage,
+  12 |   }) => {
+  13 |     await homePage.open();
+  14 |     await homePage.searchRepository(repo.searchKeyword);
+  15 | 
+  16 |     await expect(searchResultsPage.getRepositoryLink(repo.fullName)).toBeVisible();
+  17 |     await searchResultsPage.openRepository(repo.fullName);
+  18 | 
+  19 |     await expect(page).toHaveURL(repo.url);
+  20 |     await expect(repositoryPage.getRepositoryName(repo.name)).toBeVisible();
+  21 |     await expect(repositoryPage.getOwner(repo.owner)).toBeVisible();
+> 22 |     await expect(repositoryPage.getTab('Code')).toBeVisible();
+     |                                                 ^ Error: expect(locator).toBeVisible() failed
+  23 |     await expect(repositoryPage.getTab('Issues')).toBeVisible();
+  24 |     await expect(repositoryPage.getTab('Pull requests')).toBeVisible();
+  25 |     await expect(repositoryPage.getFileListing()).toBeVisible();
+  26 |     expect(await repositoryPage.getPageTitle()).toContain(repo.fullName);
+  27 |   });
+  28 | });
+  29 | 
+```

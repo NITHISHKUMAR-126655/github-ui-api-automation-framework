@@ -1,0 +1,1771 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\playwright.config.ts",
+    "rootDir": "C:/Users/NI126655/Downloads/aiqe-github-capstone/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/NI126655/Downloads/aiqe-github-capstone/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "C:/Users/NI126655/Downloads/aiqe-github-capstone/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/api/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/NI126655/Downloads/aiqe-github-capstone/test-results/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "ui-chromium",
+        "name": "ui-chromium",
+        "testDir": "C:/Users/NI126655/Downloads/aiqe-github-capstone/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/ui/**/*.spec.ts",
+          "**/integrated/**/*.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "name": "api",
+        "testDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests",
+        "snapshotDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests",
+        "testIgnore": [],
+        "testMatch": "**/api/**/*.spec.ts",
+        "timeout": 45000,
+        "use": {
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "ignoreHTTPSErrors": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "api"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "name": "ui-chromium",
+        "testDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests",
+        "snapshotDir": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/ui/**/*.spec.ts",
+          "**/integrated/**/*.spec.ts"
+        ],
+        "timeout": 45000,
+        "use": {
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "video": "off",
+          "actionTimeout": 15000,
+          "ignoreHTTPSErrors": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "baseURL": "https://github.com"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "ui-chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\negativeApi.spec.ts",
+      "file": "api/negativeApi.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API | Negative scenarios",
+          "file": "api/negativeApi.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API-N01 non-existing repository returns 404 with GitHub error structure",
+              "ok": true,
+              "tags": [
+                "negative",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1867,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/octocat/aiqe-no-such-repo-0001 -> 404 Not Found (rate-limit remaining: 57)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:55.268Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-6a6951d92b1c2bc327b8",
+              "file": "api/negativeApi.spec.ts",
+              "line": 9,
+              "column": 7
+            },
+            {
+              "title": "API-N02 invalid owner returns 404",
+              "ok": true,
+              "tags": [
+                "negative",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 715,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/aiqe-no-such-owner-0001/hello-world -> 404 Not Found (rate-limit remaining: 59)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:55.417Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-cf6f1e2ac5f9dedb9d1e",
+              "file": "api/negativeApi.spec.ts",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "API-N03 invalid repository name \"name with spaces\" returns 404",
+              "ok": false,
+              "tags": [
+                "negative",
+                "api",
+                "ddt"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 765,
+                      "error": {
+                        "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/name%20with%20spaces but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/name%20with%20spaces but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:29:7",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/name%20with%20spaces but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:29:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/name%20with%20spaces -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:55.286Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-negativeApi-API-Negati-cffd1-ame-with-spaces-returns-404-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-a5161049d073b4379b89",
+              "file": "api/negativeApi.spec.ts",
+              "line": 25,
+              "column": 9
+            },
+            {
+              "title": "API-N03 invalid repository name \"!!invalid!!\" returns 404",
+              "ok": false,
+              "tags": [
+                "negative",
+                "api",
+                "ddt"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1773,
+                      "error": {
+                        "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/!!invalid!! but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/!!invalid!! but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:29:7",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/!!invalid!! but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:29:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/!!invalid!! -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:55.295Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-negativeApi-API-Negati-62bcd-ry-name-invalid-returns-404-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-beaffd2d93afdb4afee9",
+              "file": "api/negativeApi.spec.ts",
+              "line": 25,
+              "column": 9
+            },
+            {
+              "title": "API-N04 boundary: 101-character repository name returns 404",
+              "ok": false,
+              "tags": [
+                "negative",
+                "api",
+                "boundary"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 671,
+                      "error": {
+                        "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:37:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 404 from /repos/NITHISHKUMAR-126655/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at ApiUtil.expectErrorResponse (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:70:5)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:37:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:57.218Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-negativeApi-API-Negati-f6aad-repository-name-returns-404-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-4098efb6bdae962554ef",
+              "file": "api/negativeApi.spec.ts",
+              "line": 33,
+              "column": 7
+            },
+            {
+              "title": "API-N05 unauthenticated request to a protected endpoint returns 401",
+              "ok": true,
+              "tags": [
+                "negative",
+                "api",
+                "security"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 526,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /user -> 401 Unauthorized (rate-limit remaining: 58)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:56.261Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-9a60e0b397a375f873ea",
+              "file": "api/negativeApi.spec.ts",
+              "line": 40,
+              "column": 7
+            },
+            {
+              "title": "API-N06 invalid token returns 401 Bad credentials",
+              "ok": true,
+              "tags": [
+                "negative",
+                "api",
+                "security"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 498,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /user -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:56.834Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-f4bca13cb8f232001d03",
+              "file": "api/negativeApi.spec.ts",
+              "line": 48,
+              "column": 7
+            },
+            {
+              "title": "API-N07 unauthenticated create is rejected and no repository is created",
+              "ok": false,
+              "tags": [
+                "negative",
+                "api",
+                "security"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1167,
+                      "error": {
+                        "message": "Error: Repository aiqe-capstone-20261029063159218-b951 must not exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Repository aiqe-capstone-20261029063159218-b951 must not exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:68:70",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts",
+                          "column": 70,
+                          "line": 68
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 66 |\u001b[39m     \u001b[90m// Verify with the authenticated service that nothing was created.\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m lookup \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(env\u001b[33m.\u001b[39muserId\u001b[33m,\u001b[39m repoName)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m     expect(lookup\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Repository ${repoName} must not exist`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 71 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts",
+                            "column": 70,
+                            "line": 68
+                          },
+                          "message": "Error: Repository aiqe-capstone-20261029063159218-b951 must not exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[0m \u001b[90m 66 |\u001b[39m     \u001b[90m// Verify with the authenticated service that nothing was created.\u001b[39m\n \u001b[90m 67 |\u001b[39m     \u001b[36mconst\u001b[39m lookup \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(env\u001b[33m.\u001b[39muserId\u001b[33m,\u001b[39m repoName)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m     expect(lookup\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Repository ${repoName} must not exist`\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 71 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts:68:70\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] POST /user/repos -> 401 Unauthorized (rate-limit remaining: 56)\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159218-b951 -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:59.120Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-negativeApi-API-Negati-325a8-nd-no-repository-is-created-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\negativeApi.spec.ts",
+                        "column": 70,
+                        "line": 68
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6340ac88cc0701b470e4-5ba63143d4b2b3760f54",
+              "file": "api/negativeApi.spec.ts",
+              "line": 57,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\repositoryApi.spec.ts",
+      "file": "api/repositoryApi.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API | Repositories",
+          "file": "api/repositoryApi.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API-02 GET /repos/{owner}/{repo} returns repository details",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 520,
+                      "error": {
+                        "message": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:15:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:15:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:57.274Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-repositoryApi-API-Repo-d3a87--returns-repository-details-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ce86ef2a8d9608300443-fe026581959e4e3a563a",
+              "file": "api/repositoryApi.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "API-03 GET /user/repos lists repositories including the capstone repository",
+              "ok": false,
+              "tags": [
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 480,
+                      "error": {
+                        "message": "Error: Expected 200 from /user/repos but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 200 from /user/repos but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:34:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 200 from /user/repos but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:34:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /user/repos?affiliation=owner&sort=updated&per_page=100&page=1 -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:57.390Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-repositoryApi-API-Repo-cc15f-ing-the-capstone-repository-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ce86ef2a8d9608300443-06c908ce1ab6f9b61881",
+              "file": "api/repositoryApi.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "API-04 create a uniquely named repository, validate it, then clean it up",
+              "ok": false,
+              "tags": [
+                "api",
+                "cleanup"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16458,
+                      "error": {
+                        "message": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m",
+                        "stack": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m\n    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:18:79)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:72:7",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                          "column": 79,
+                          "line": 18
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`[CLEANUP] ${owner}/${repo} -> delete status ${status} (${status === 204 ? 'deleted' : 'not deleted'})`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     expect\u001b[33m.\u001b[39msoft([\u001b[35m204\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Cleanup of ${owner}/${repo} returned ${status}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(status)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\n \u001b[90m 21 |\u001b[39m       \u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m (\u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(owner\u001b[33m,\u001b[39m repo))\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                            "column": 79,
+                            "line": 18
+                          },
+                          "message": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`[CLEANUP] ${owner}/${repo} -> delete status ${status} (${status === 204 ? 'deleted' : 'not deleted'})`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     expect\u001b[33m.\u001b[39msoft([\u001b[35m204\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Cleanup of ${owner}/${repo} returned ${status}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(status)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\n \u001b[90m 21 |\u001b[39m       \u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m (\u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(owner\u001b[33m,\u001b[39m repo))\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[2m    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:18:79)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:72:7\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                            "column": 8,
+                            "line": 25
+                          },
+                          "message": "Error: Repository NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 should be gone after cleanup\n\nRepository NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 should be gone after cleanup\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m15\u001b[39m_000\u001b[33m,\u001b[39m\n \u001b[90m 24 |\u001b[39m       })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m }\n \u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[2m    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:25:8)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\repositoryApi.spec.ts:72:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] POST /user/repos -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] DELETE /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[CLEANUP] NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> delete status 401 (not deleted)\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063159741-8c36 -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:59.613Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-repositoryApi-API-Repo-d6a58-alidate-it-then-clean-it-up-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                        "column": 79,
+                        "line": 18
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ce86ef2a8d9608300443-bd7d506b374acc2f927d",
+              "file": "api/repositoryApi.spec.ts",
+              "line": 47,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\userApi.spec.ts",
+      "file": "api/userApi.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API | Authenticated user",
+          "file": "api/userApi.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "API-01 GET /user returns the authenticated user",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 683,
+                      "error": {
+                        "message": "Error: Expected 200 from /user but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 200 from /user but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\userApi.spec.ts:11:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 200 from /user but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\userApi.spec.ts:11:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /user -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:59.633Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-userApi-API-Authentica-febe6-urns-the-authenticated-user-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "281c784dd116220fe040-5bea75a687f9a0e1c82f",
+              "file": "api/userApi.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "API-06 GET /rate_limit reports a valid core rate limit",
+              "ok": false,
+              "tags": [
+                "api",
+                "bonus"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "api",
+                  "projectName": "api",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 660,
+                      "error": {
+                        "message": "Error: Expected 200 from /rate_limit but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 200 from /rate_limit but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\userApi.spec.ts:24:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 200 from /rate_limit but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\api\\userApi.spec.ts:24:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /rate_limit -> 401 Unauthorized\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:31:59.652Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\api-userApi-API-Authentica-9adee-rts-a-valid-core-rate-limit-api\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "281c784dd116220fe040-66e4508ab3048f32e998",
+              "file": "api/userApi.spec.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "integrated\\createAndValidateRepository.spec.ts",
+      "file": "integrated/createAndValidateRepository.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Integrated | UI + API",
+          "file": "integrated/createAndValidateRepository.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "INT-01 create repository via API, validate it in the UI, delete via API",
+              "ok": false,
+              "tags": [
+                "integrated",
+                "cleanup"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 17793,
+                      "error": {
+                        "message": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m",
+                        "stack": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m\n    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:18:79)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\integrated\\createAndValidateRepository.spec.ts:53:7",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                          "column": 79,
+                          "line": 18
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`[CLEANUP] ${owner}/${repo} -> delete status ${status} (${status === 204 ? 'deleted' : 'not deleted'})`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     expect\u001b[33m.\u001b[39msoft([\u001b[35m204\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Cleanup of ${owner}/${repo} returned ${status}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(status)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\n \u001b[90m 21 |\u001b[39m       \u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m (\u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(owner\u001b[33m,\u001b[39m repo))\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                            "column": 79,
+                            "line": 18
+                          },
+                          "message": "Error: Cleanup of NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 returned 401\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m401\u001b[39m\nReceived array: \u001b[31m[204, 404]\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m status \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mstatus()\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`[CLEANUP] ${owner}/${repo} -> delete status ${status} (${status === 204 ? 'deleted' : 'not deleted'})`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     expect\u001b[33m.\u001b[39msoft([\u001b[35m204\u001b[39m\u001b[33m,\u001b[39m \u001b[35m404\u001b[39m]\u001b[33m,\u001b[39m \u001b[32m`Cleanup of ${owner}/${repo} returned ${status}`\u001b[39m)\u001b[33m.\u001b[39mtoContain(status)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect\n \u001b[90m 21 |\u001b[39m       \u001b[33m.\u001b[39mpoll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m (\u001b[36mawait\u001b[39m repoService\u001b[33m.\u001b[39mgetRepository(owner\u001b[33m,\u001b[39m repo))\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m {\u001b[0m\n\u001b[2m    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:18:79)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\integrated\\createAndValidateRepository.spec.ts:53:7\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                            "column": 8,
+                            "line": 25
+                          },
+                          "message": "Error: Repository NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 should be gone after cleanup\n\nRepository NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 should be gone after cleanup\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\CleanupUtil.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m         timeout\u001b[33m:\u001b[39m \u001b[35m15\u001b[39m_000\u001b[33m,\u001b[39m\n \u001b[90m 24 |\u001b[39m       })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m       \u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m }\n \u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[2m    at CleanupUtil.deleteGeneratedRepository (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts:25:8)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\integrated\\createAndValidateRepository.spec.ts:53:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] POST /user/repos -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] DELETE /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[CLEANUP] NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> delete status 401 (not deleted)\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/aiqe-capstone-20261029063205097-dcd6 -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[SCREENSHOT] Saved failure screenshot: C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\screenshots\\failed-int-01-create-repository-via-api-validate-it-in-the-ui-delete-via-api-20261029063220888.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:02.178Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\integrated-createAndValida-2568b-it-in-the-UI-delete-via-API-ui-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\integrated-createAndValida-2568b-it-in-the-UI-delete-via-API-ui-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\CleanupUtil.ts",
+                        "column": 79,
+                        "line": 18
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c79dd4bb550b0b797e02-3d54b1ba5da9bef6d560",
+              "file": "integrated/createAndValidateRepository.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "INT-02 repository details from the API match the UI (alternative scenario)",
+              "ok": false,
+              "tags": [
+                "integrated"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 2529,
+                      "error": {
+                        "message": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m",
+                        "stack": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\integrated\\createAndValidateRepository.spec.ts:63:5",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                          "column": 9,
+                          "line": 52
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                            "column": 9,
+                            "line": 52
+                          },
+                          "message": "Error: Expected 200 from /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git but got 401 (GitHub message: Bad credentials)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m401\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\src\\utils\\ApiUtil.ts:52\n\n\u001b[0m \u001b[90m 50 |\u001b[39m         \u001b[32m`Expected ${expected} from ${new URL(response.url()).pathname} but got ${response.status()} `\u001b[39m \u001b[33m+\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[32m`(GitHub message: ${body?.message ?? 'n/a'})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       )\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   }\n \u001b[90m 55 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiUtil.expectStatus (C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts:52:9)\u001b[22m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\integrated\\createAndValidateRepository.spec.ts:63:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[API] GET /repos/NITHISHKUMAR-126655/github-ui-api-automation-framework.git -> 401 Unauthorized\n"
+                        },
+                        {
+                          "text": "[SCREENSHOT] Saved failure screenshot: C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\screenshots\\failed-int-02-repository-details-from-the-api-match-the-ui-alternative-scenario-20261029063205679.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:02.313Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\integrated-createAndValida-8c558-he-UI-alternative-scenario--ui-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\integrated-createAndValida-8c558-he-UI-alternative-scenario--ui-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\src\\utils\\ApiUtil.ts",
+                        "column": 9,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c79dd4bb550b0b797e02-3a483a18303d161295e6",
+              "file": "integrated/createAndValidateRepository.spec.ts",
+              "line": 57,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\authenticatedNavigation.spec.ts",
+      "file": "ui/authenticatedNavigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI | Authenticated navigation",
+          "file": "ui/authenticatedNavigation.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-03 authenticated user can open the dashboard and the capstone repository",
+              "ok": false,
+              "tags": [
+                "auth",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 21907,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\authenticatedNavigation.spec.ts:25:24",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\authenticatedNavigation.spec.ts",
+                          "column": 24,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m repositoryPage\u001b[33m.\u001b[39mopen(env\u001b[33m.\u001b[39muserId\u001b[33m,\u001b[39m env\u001b[33m.\u001b[39mtestRepo)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(\u001b[32m`/${env.userId}/${env.testRepo}$`\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(env\u001b[33m.\u001b[39mtestRepo))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(env\u001b[33m.\u001b[39muserId))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\authenticatedNavigation.spec.ts",
+                            "column": 24,
+                            "line": 25
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m repositoryPage\u001b[33m.\u001b[39mopen(env\u001b[33m.\u001b[39muserId\u001b[33m,\u001b[39m env\u001b[33m.\u001b[39mtestRepo)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(\u001b[32m`/${env.userId}/${env.testRepo}$`\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(env\u001b[33m.\u001b[39mtestRepo))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(env\u001b[33m.\u001b[39muserId))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\authenticatedNavigation.spec.ts:25:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[SCREENSHOT] Saved failure screenshot: C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\screenshots\\failed-ui-03-authenticated-user-can-open-the-dashboard-and-the-capstone-reposito-20261029063224421.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:02.177Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-authenticatedNavigation-33675-and-the-capstone-repository-ui-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-authenticatedNavigation-33675-and-the-capstone-repository-ui-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\authenticatedNavigation.spec.ts",
+                        "column": 24,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c6053343b1ba41bf97e-7ee4c39aebe5f58825ee",
+              "file": "ui/authenticatedNavigation.spec.ts",
+              "line": 14,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\negativeSearch.spec.ts",
+      "file": "ui/negativeSearch.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI | Negative repository scenarios",
+          "file": "ui/negativeSearch.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-05a searching for a non-existing repository shows an empty state",
+              "ok": true,
+              "tags": [
+                "negative",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8436,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:07.904Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "70e0b64fc6d2a2a28e8e-9cb09377ccd90e60333b",
+              "file": "ui/negativeSearch.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "UI-05b opening an invalid repository URL returns a 404 page",
+              "ok": true,
+              "tags": [
+                "negative",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:18.836Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "70e0b64fc6d2a2a28e8e-999fc9d43c9514c396f3",
+              "file": "ui/negativeSearch.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\profileValidation.spec.ts",
+      "file": "ui/profileValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI | Public user profile",
+          "file": "ui/profileValidation.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-02 validate a known public user profile",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:16.928Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2ac6592265a3c3dc21b3-f119dd92f8dc62406b30",
+              "file": "ui/profileValidation.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\repositorySearch.spec.ts",
+      "file": "ui/repositorySearch.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI | Public repository search",
+          "file": "ui/repositorySearch.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-01 search a known public repository and validate its details",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 13953,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\nExpected: visible\nError: strict mode violation: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) resolved to 2 elements:\n    1) <a aria-current=\"page\" data-tab-item=\"code\" data-discover=\"true\" data-react-nav=\"code-view\" href=\"/microsoft/playwright\" class=\"prc-components-UnderlineItem-7fP-n\" data-react-nav-anchor=\"code-view-repo-link\" data-turbo-frame=\"repo-content-turbo-frame\">…</a> aka getByRole('link', { name: 'Code', exact: true })\n    2) <a href=\"#\" class=\"prc-components-UnderlineItem-7fP-n\">…</a> aka getByRole('navigation', { name: 'Repository files' }).getByRole('link', { name: 'Code of conduct' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\nExpected: visible\nError: strict mode violation: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) resolved to 2 elements:\n    1) <a aria-current=\"page\" data-tab-item=\"code\" data-discover=\"true\" data-react-nav=\"code-view\" href=\"/microsoft/playwright\" class=\"prc-components-UnderlineItem-7fP-n\" data-react-nav-anchor=\"code-view-repo-link\" data-turbo-frame=\"repo-content-turbo-frame\">…</a> aka getByRole('link', { name: 'Code', exact: true })\n    2) <a href=\"#\" class=\"prc-components-UnderlineItem-7fP-n\">…</a> aka getByRole('navigation', { name: 'Repository files' }).getByRole('link', { name: 'Code of conduct' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\u001b[22m\n\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositorySearch.spec.ts:22:49",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositorySearch.spec.ts",
+                          "column": 49,
+                          "line": 22
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(repo\u001b[33m.\u001b[39mname))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(repo\u001b[33m.\u001b[39mowner))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Code'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Issues'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Pull requests'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetFileListing())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositorySearch.spec.ts",
+                            "column": 49,
+                            "line": 22
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\nExpected: visible\nError: strict mode violation: getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) resolved to 2 elements:\n    1) <a aria-current=\"page\" data-tab-item=\"code\" data-discover=\"true\" data-react-nav=\"code-view\" href=\"/microsoft/playwright\" class=\"prc-components-UnderlineItem-7fP-n\" data-react-nav-anchor=\"code-view-repo-link\" data-turbo-frame=\"repo-content-turbo-frame\">…</a> aka getByRole('link', { name: 'Code', exact: true })\n    2) <a href=\"#\" class=\"prc-components-UnderlineItem-7fP-n\">…</a> aka getByRole('navigation', { name: 'Repository files' }).getByRole('link', { name: 'Code of conduct' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: 'Repository' }).getByRole('link', { name: /^Code/ })\u001b[22m\n\n\n\u001b[0m \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(repo\u001b[33m.\u001b[39mname))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(repo\u001b[33m.\u001b[39mowner))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Code'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Issues'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetTab(\u001b[32m'Pull requests'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetFileListing())\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositorySearch.spec.ts:22:49\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[SCREENSHOT] Saved failure screenshot: C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\screenshots\\failed-ui-01-search-a-known-public-repository-and-validate-its-details-20261029063237064.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:23.922Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-repositorySearch-UI-Pub-e9567-ry-and-validate-its-details-ui-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-repositorySearch-UI-Pub-e9567-ry-and-validate-its-details-ui-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositorySearch.spec.ts",
+                        "column": 49,
+                        "line": 22
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b8334441ac9280e36157-0eb2da519e18aa0b2511",
+              "file": "ui/repositorySearch.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\repositoryValidation.spec.ts",
+      "file": "ui/repositoryValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UI | Dedicated repository validation",
+          "file": "ui/repositoryValidation.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UI-04 validate the dedicated capstone repository",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 13773,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n\n    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositoryValidation.spec.ts:18:24",
+                        "location": {
+                          "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositoryValidation.spec.ts",
+                          "column": 24,
+                          "line": 18
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m     expect(response\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'Repository page should load (private repo needs a storage state)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(\u001b[32m`/${env.userId}/${env.testRepo}$`\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(env\u001b[33m.\u001b[39mtestRepo))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(env\u001b[33m.\u001b[39muserId))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetVisibility())\u001b[33m.\u001b[39mtoHaveText(expected\u001b[33m.\u001b[39mexpectedVisibility)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositoryValidation.spec.ts",
+                            "column": 24,
+                            "line": 18
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/NITHISHKUMAR-126655\\/github-ui-api-automation-framework.git$/i\u001b[39m\nReceived string:  \u001b[31m\"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 10000ms\u001b[22m\n\u001b[2m    21 × locator resolved to <html lang=\"en\" data-render-ssr=\"true\" data-color-mode=\"auto\" data-dark-theme=\"dark\" data-light-theme=\"light\" class=\"js-focus-visible\" data-js-focus-visible=\"\" data-a11y-link-underlines=\"true\" data-a11y-animated-images=\"system\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"https://github.com/NITHISHKUMAR-126655/github-ui-api-automation-framework\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     expect(response\u001b[33m?\u001b[39m\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'Repository page should load (private repo needs a storage state)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 17 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[36mnew\u001b[39m \u001b[33mRegExp\u001b[39m(\u001b[32m`/${env.userId}/${env.testRepo}$`\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'i'\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetRepositoryName(env\u001b[33m.\u001b[39mtestRepo))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetOwner(env\u001b[33m.\u001b[39muserId))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mawait\u001b[39m expect(repositoryPage\u001b[33m.\u001b[39mgetVisibility())\u001b[33m.\u001b[39mtoHaveText(expected\u001b[33m.\u001b[39mexpectedVisibility)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositoryValidation.spec.ts:18:24\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[SCREENSHOT] Saved failure screenshot: C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\screenshots\\failed-ui-04-validate-the-dedicated-capstone-repository-20261029063235012.png\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:21.684Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-repositoryValidation-UI-2ec52-dicated-capstone-repository-ui-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\test-results\\artifacts\\ui-repositoryValidation-UI-2ec52-dicated-capstone-repository-ui-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\NI126655\\Downloads\\aiqe-github-capstone\\tests\\ui\\repositoryValidation.spec.ts",
+                        "column": 24,
+                        "line": 18
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fa4dc29e9793aee2be1f-e74cdf470bd3d43d6948",
+              "file": "ui/repositoryValidation.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "UI-04b repository tabs navigate correctly",
+              "ok": true,
+              "tags": [
+                "ui"
+              ],
+              "tests": [
+                {
+                  "timeout": 45000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui-chromium",
+                  "projectName": "ui-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8443,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-29T06:32:23.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fa4dc29e9793aee2be1f-518401f33e39f69220fd",
+              "file": "ui/repositoryValidation.spec.ts",
+              "line": 27,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-29T06:31:53.592Z",
+    "duration": 45548.423,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 14,
+    "flaky": 0
+  }
+}
